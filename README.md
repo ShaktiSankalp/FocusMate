@@ -1,11 +1,13 @@
 
-## Deployement :     
-     [click here](https://focusmate-6y2s.onrender.com)
----
+
 
 # FocusMate: React Bottom Sheet Productivity Assistant
 
 A sleek React app featuring a draggable bottom sheet with multiple snap points, combining a Chat Assistant and Task Scheduler to boost your productivity. Built with React hooks, smooth animations, and Tailwind CSS — no third-party animation libraries required.
+
+
+**Deployment:** [Click here to view the app](https://focusmate-6y2s.onrender.com)
+
 
 ---
 
