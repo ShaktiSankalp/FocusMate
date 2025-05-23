@@ -17,6 +17,10 @@ A sleek React app featuring a draggable bottom sheet with multiple snap points, 
 
 ---
 
+## Deployement :     
+    https://focusmate-6y2s.onrender.com
+---
+
 ## Getting Started
 
 ### Prerequisites
