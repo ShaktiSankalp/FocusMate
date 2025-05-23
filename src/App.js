@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import BottomSheet from './components/BottomSheet';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="min-h-screen bg-grayLight flex flex-col">
+      <header className="py-6 bg-white shadow-soft-md">
+        <h1 className="text-center text-4xl font-extrabold tracking-tight text-grayDark select-none">
+          FocusMate
+        </h1>
+        <p className="text-center text-gray-500 mt-1 text-sm sm:text-base max-w-md mx-auto px-4">
+          Your productivity companion with smart chat & task management
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <main className="flex-grow flex justify-center items-center px-4 sm:px-8">
+        <div className="w-full max-w-md rounded-lg shadow-soft-md bg-white overflow-hidden">
+          <BottomSheet />
+        </div>
+      </main>
+
+      <footer className="py-4 text-center text-xs text-gray-400 select-none">
+        &copy; {new Date().getFullYear()} FocusMate. All rights reserved.
+      </footer>
     </div>
   );
 }

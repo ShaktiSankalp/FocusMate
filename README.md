@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Cool! Here’s a polished `README.md` draft for your project with a nice name and no GitHub link.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+````markdown
+# FocusMate: React Bottom Sheet Productivity Assistant
 
-In the project directory, you can run:
+A sleek React app featuring a draggable bottom sheet with multiple snap points, combining a Chat Assistant and Task Scheduler to boost your productivity. Built with React hooks, smooth animations, and Tailwind CSS — no third-party animation libraries required.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Draggable Bottom Sheet** with three snap points: collapsed, half-open, and fully open.
+- **Spring-like smooth animations** on drag and snap transitions (custom implemented).
+- **Chat Assistant** with auto-scrolling chat bubbles, persistent input, and canned AI responses.
+- **Task Scheduler** to add, check off, and delete tasks with data saved in localStorage.
+- Responsive and mobile-friendly design using Tailwind CSS.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher recommended)
+- npm or yarn package manager
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone or download the project files.
+2. Navigate to the project directory in your terminal.
+3. Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+# or
+yarn install
+````
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+# or
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+/src
+  /components
+    BottomSheet.jsx
+    Tabs.jsx
+    ChatAssistant.jsx
+    ChatBubble.jsx
+    TaskScheduler.jsx
+    TaskItem.jsx
+  /hooks
+    useTasks.js
+  App.jsx
+  index.js
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Drag the bottom sheet handle to switch between collapsed, half-open, and fully open views.
+* Switch between “Chat” and “Tasks” tabs to interact with different features.
+* In **Chat**, type messages to get automated assistant replies.
+* In **Tasks**, add new tasks using the fixed input area at the top.
+  The task list below scrolls independently and adapts to different screen sizes,
+  ensuring a smooth and responsive experience.
+* Mark tasks complete or delete them; your tasks persist on refresh.
+---
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* React with Hooks
+* Tailwind CSS for styling
+* LocalStorage API for task persistence
+* Custom spring-motion animation logic (no external libs)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
